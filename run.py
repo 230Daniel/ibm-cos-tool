@@ -98,7 +98,7 @@ def clear_command_log():
     f.close()
 
 
-def _write_to_command_log(*lines: str) -> None:
+def _write_to_command_log(*lines: str):
     global COMMAND_LOG_FILE
 
     f = open(COMMAND_LOG_FILE, 'a')
